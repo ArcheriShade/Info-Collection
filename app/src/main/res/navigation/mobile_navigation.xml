@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_sys">
+
+    <fragment
+        android:id="@+id/nav_sys"
+        android:name="com.example.infocollection.ui.fragment.SysFragment"
+        android:label="@string/menu_sys"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_phone"
+        android:name="com.example.infocollection.ui.fragment.PhoneFragment"
+        android:label="@string/menu_phone"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_hardware"
+        android:name="com.example.infocollection.ui.fragment.HardwareFragment"
+        android:label="@string/menu_hardware"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_cpu"
+        android:name="com.example.infocollection.ui.fragment.CpuFragment"
+        android:label="@string/menu_cpu"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_ram"
+        android:name="com.example.infocollection.ui.fragment.RamFragment"
+        android:label="@string/menu_ram"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_store"
+        android:name="com.example.infocollection.ui.fragment.StoreFragment"
+        android:label="@string/menu_store"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_sensor"
+        android:name="com.example.infocollection.ui.fragment.SensorFragment"
+        android:label="@string/menu_sensor"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_battery"
+        android:name="com.example.infocollection.ui.fragment.BatteryFragment"
+        android:label="@string/menu_battery"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="com.example.infocollection.ui.fragment.CameraFragment"
+        android:label="@string/menu_camera"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_net"
+        android:name="com.example.infocollection.ui.fragment.NetFragment"
+        android:label="@string/menu_net"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_process"
+        android:name="com.example.infocollection.ui.fragment.ProcessFragment"
+        android:label="@string/menu_process"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_app"
+        android:name="com.example.infocollection.ui.fragment.AppFragment"
+        android:label="@string/menu_app"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.infocollection.ui.fragment.AboutFragment"
+        android:label="@string/action_about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>

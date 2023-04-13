@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_about_bg">
+
+    <ImageView
+        android:id="@+id/image_about_bg"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginRight="-100dp"
+        android:layout_marginBottom="-100dp"
+        android:alpha="0.2"
+        android:rotation="-45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/theme_icon" />
+
+    <ImageView
+        android:id="@+id/image_about"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar"
+        android:contentDescription="说明页面的头像"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/nav_header_title"
+        android:textColor="@color/theme_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_about" />
+
+    <TextView
+        android:id="@+id/tv_about_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/author_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about" />
+
+    <TextView
+        android:id="@+id/tv_about_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="10sp"
+        android:lines="6"
+        android:text="贾广琛\n李雨晴\n宋泽楷\n田    星\n谢庆贺\n徐子彬"
+        android:textColor="@color/member_name_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_about_workdivi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about_sub" />
+
+    <TextView
+        android:id="@+id/tv_about_workdivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:lineSpacingExtra="10sp"
+        android:text="系统信息\n代码、美工\n代码、资料整理\n干活\n代码\n代码"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_about_member"
+        app:layout_constraintTop_toTopOf="@+id/tv_about_member" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="小组分工（按姓名拼音首字母排序）"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_about_member"
+        app:layout_constraintStart_toStartOf="@+id/tv_about_member" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

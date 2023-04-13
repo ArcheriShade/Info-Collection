@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sys"
+            android:title="@string/menu_sys" />
+        <item
+            android:id="@+id/nav_phone"
+            android:title="@string/menu_phone" />
+        <item
+            android:id="@+id/nav_hardware"
+            android:title="@string/menu_hardware" />
+        <item
+            android:id="@+id/nav_cpu"
+            android:title="@string/menu_cpu" />
+        <item
+            android:id="@+id/nav_ram"
+            android:title="@string/menu_ram" />
+        <item
+            android:id="@+id/nav_store"
+            android:title="@string/menu_store" />
+        <item
+            android:id="@+id/nav_sensor"
+            android:title="@string/menu_sensor" />
+        <item
+            android:id="@+id/nav_battery"
+            android:title="@string/menu_battery" />
+        <item
+            android:id="@+id/nav_camera"
+            android:title="@string/menu_camera" />
+        <item
+            android:id="@+id/nav_net"
+            android:title="@string/menu_net" />
+        <item
+            android:id="@+id/nav_process"
+            android:title="@string/menu_process" />
+        <item
+            android:id="@+id/nav_app"
+            android:title="@string/menu_app" />
+    </group>
+</menu>
