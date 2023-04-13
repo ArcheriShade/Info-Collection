@@ -2,6 +2,12 @@
 
 借鉴：https://github.com/song-dev/device-info
 
+## Build
+
+SDK：33
+
+Android VM：30
+
 ## 信息采集模块
 
 1. - [x] 系统信息（Base）
